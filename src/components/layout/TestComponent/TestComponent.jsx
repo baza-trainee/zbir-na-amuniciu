@@ -1,6 +1,6 @@
 import sprite from '../../../assets/icons/sprite.svg';
 
-export const TestComponent = () => {
+const TestComponent = () => {
   return (
     <section>
       <h1 className="test-title">ЗБІР НА АМУНІЦІЮ</h1>
@@ -16,3 +16,5 @@ export const TestComponent = () => {
     </section>
   );
 };
+
+export default TestComponent;
