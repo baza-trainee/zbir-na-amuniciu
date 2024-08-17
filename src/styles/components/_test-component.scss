@@ -1,0 +1,26 @@
+@use 'sass:map';
+
+.test-title {
+  color: map.get($colors, 'accent');
+  background-color: map.get($colors, 'background');
+}
+
+.test-svg-menu {
+  width: 40px;
+  height: 40px;
+  stroke: map.get($colors, 'stroke');
+}
+
+.test-svg-check {
+  width: 40px;
+  height: 40px;
+  stroke: map.get($colors, 'accent');
+  fill: none
+}
+
+.test-svg-telegram {
+  width: 40px;
+  height: 40px;
+}
+
+  
