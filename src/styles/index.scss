@@ -1,6 +1,11 @@
+// global styles
+
 @import './global/global';
 @import './global/fonts';
 @import './global/reset';
 @import './global/mixins';
 @import './global/variables';
+
+// components styles
 @import './components/test-component';
+@import './components/progress-bar'

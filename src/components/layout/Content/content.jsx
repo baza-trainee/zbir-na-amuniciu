@@ -1,9 +1,11 @@
-import { TestComponent } from "../TestComponent/TestComponent";
+import ProgressBar from "../../ProgressBar/ProgressBar";
+// import { TestComponent } from "../TestComponent/TestComponent";
 
 export const Content = () => {
     return (
         <main>
-            <TestComponent/>
+            {/* <TestComponent/> */}
+            <ProgressBar/>
         </main>
     );
 };
