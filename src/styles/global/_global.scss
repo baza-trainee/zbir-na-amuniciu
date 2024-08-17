@@ -1,11 +1,29 @@
 :root {
   body {
     font-family: 'Montserrat', sans-serif;
+    background-color: #fbfff8;
     min-height: 100vh;
   }
 
   html {
     scroll-behavior: smooth;
     height: 100%;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding-left: 230px;
+    padding-right: 230px;
   }
 }
