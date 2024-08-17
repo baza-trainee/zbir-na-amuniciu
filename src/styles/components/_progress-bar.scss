@@ -2,6 +2,10 @@
 
 .progress-section {
   padding-bottom: 60px;
+
+  @media screen and (min-width: 1024px) {
+      padding-bottom: 120px;
+  }
 }
 
 .progress-title-wrap {
@@ -15,25 +19,41 @@
   font-weight: 500;
   font-size: 24px;
   text-transform: uppercase;
-  // line-height: ;
-  // letter-spacing: ;
+  line-height: 1.4;
+  letter-spacing: 1.92px;
   text-align: center;
   color: map.get($colors, 'dark-text');
   margin-bottom: 24px;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 32px;
+    // line-height: ;
+    // letter-spacing: ;
+    margin-bottom: 40px;
+}
 }
 
 .progress-info-wrap {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 24px;
+}
 }
 
 .progress-desc {
   font-size: 14px;
   font-weight: 400;
-  // line-height: ;
-  // letter-spacing: ;
+  line-height: 1.8;
   color: map.get($colors, 'dark-text');
+
+  @media screen and (min-width: 1024px) {
+    font-size: 24px;
+    line-height: 1.4;
+    letter-spacing: 1.92px;
+}
 }
 
 .progress-wrap {
@@ -44,42 +64,21 @@
   height: 50px;
   border: 1px solid map.get($colors, 'dark-text');
   border-radius: 12px;
+
+  @media screen and (min-width: 1024px) {
+    width: 100%;
+    height: 60px;
+    border-radius: 13px;
+}
 }
 
 .progress-bar {
   margin-left: 3px;
   height: 42px;
-  min-width: 120px;
   background-color: map.get($colors, 'progress-bar');
   border-radius: 12px;
-}
 
-@media screen and (min-width: 1024px) {
-  .progress-section {
-    padding-bottom: 120px;
-  }
-
-  .progress-title {
-    font-size: 32px;
-    //   letter-spacing: ;
-    margin-bottom: 40px;
-  }
-
-  .progress-info-wrap {
-    margin-bottom: 24px;
-  }
-
-  .progress-desc {
-    font-size: 24px;
-  }
-
-  .progress-bar {
+  @media screen and (min-width: 1024px) {
     height: 52px;
-  }
-
-  .progress-wrap {
-    width: 100%;
-    height: 60px;
-    border-radius: 13px;
-  }
+}
 }
