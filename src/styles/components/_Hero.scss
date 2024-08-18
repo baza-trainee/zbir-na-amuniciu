@@ -1,0 +1,6 @@
+@use 'sass:map';
+
+.HeroSection{
+    padding: 120px 0;
+    color: map-get($colors, 'accent');
+}
