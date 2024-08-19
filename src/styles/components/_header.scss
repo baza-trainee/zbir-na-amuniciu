@@ -121,9 +121,6 @@
 }
 
 @media (width >= 1024px) {
-    .header {
-    }
-
     .nav {
         background-color: inherit;
         position: static;
@@ -161,11 +158,4 @@
     .burger_menu_icon {
         display: none;
     }
-}
-
-@media (width >= 1680px) {
-    .header {
-    }
-
-    
 }
