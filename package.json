@@ -17,7 +17,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "start": "vite preview"
+    "start": "vite preview",
+    "watch": "npx vite build --watch"
   },
   "eslintConfig": {
     "extends": [
