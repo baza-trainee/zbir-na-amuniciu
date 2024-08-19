@@ -1,0 +1,168 @@
+@use 'sass:map';
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+  align-items: center;
+}
+
+.about-images-container {
+  order: 2;
+  min-height: 268px;
+  width: 260px;
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.about-bag-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 137;
+  height: 160px;
+}
+
+.about-kask-image {
+  position: absolute;
+  top: 0;
+  left: 95px;
+  width: 101px;
+  height: 103px;
+}
+
+.about-plits-image {
+  position: absolute;
+  right: 0;
+  bottom: 50px;
+  width: 115px;
+  height: 120px;
+}
+
+.about-article-section {
+  margin-bottom: 32px;
+  text-align: center;
+  max-width: 343px;
+}
+
+.about-title {
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 24px;
+  order: 0;
+}
+
+.about-text {
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  order: 1;
+  letter-spacing: 1px; // correct to correct values
+  line-height: 1.3; // correct to correct values
+}
+
+// use the button component when ready
+.about-button {
+  order: 3;
+  max-width: 343px;
+  text-align: center;
+  padding: 16px 72px;
+  border-radius: 12px;
+  color: map-get($colors, 'white-text');
+  background-color: map-get($colors, 'accent');
+  font-size: 20px;
+  font-weight: 400;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.about-button:hover {
+  background-color: inherit;
+  outline: 2px solid map-get($colors, 'accent'); // use outline because border-box not working
+  color: map-get($colors, 'dark-text');
+  // padding: 14px 70px; or change padding
+}
+
+@media (min-width: 1024px) {
+  // change to global section when done
+  .about-section {
+    flex-wrap: wrap;
+    max-height: 376px;
+    align-items: start;
+    align-content: center;
+  }
+
+  .about-images-container {
+    position: relative;
+    order: 0;
+    flex-basis: 100%;
+    min-width: 397px;
+    min-height: 376px;
+  }
+
+  .about-bag-image {
+    position: absolute;
+    bottom: 0;
+    width: 216px;
+    height: 228px;
+  }
+
+  .about-kask-image {
+    position: absolute;
+    left: 90px;
+    width: 164px;
+    height: 125px;
+  }
+
+  .about-plits-image {
+    position: absolute;
+    bottom: 90px;
+    left: 200px;
+    width: 189px;
+    height: 158px;
+  }
+
+  .about-article-section {
+    min-width: 563px;
+    flex-grow: 1;
+  }
+
+  .about-title {
+    text-align: start;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 48px;
+    text-align: start;
+    color: map-get($colors, 'dark-text');
+  }
+
+  .about-text {
+    width: 100%;
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 1px; // correct to correct values
+    line-height: 1.3; // correct to correct values
+    text-align: start;
+    margin-bottom: 56px;
+  }
+
+  // use the button component when ready
+  .about-button {
+    padding: 16px 72px;
+    border-radius: 12px;
+    color: map-get($colors, 'white-text');
+    background-color: map-get($colors, 'accent');
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    margin: 0;
+  }
+
+  .about-button:hover {
+    background-color: inherit;
+    outline: 2px solid map-get($colors, 'accent'); // use outline because border-box not working
+    color: map-get($colors, 'dark-text');
+    // padding: 14px 70px; or change padding
+  }
+}
