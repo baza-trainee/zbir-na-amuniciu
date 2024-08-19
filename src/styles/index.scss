@@ -7,10 +7,12 @@
 @import './global/variables';
 
 // components styles
+@import './components/reusableBtn';
 @import './components/test-component';
-@import './components/about-component';
+@import './components/about';
 @import './components/progress-bar';
 @import './components/header';
 @import './components/footer';
 @import './components/Hero';
 @import './components/share-modal'
+@import './components/important-info';

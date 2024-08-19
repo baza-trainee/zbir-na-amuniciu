@@ -8,6 +8,8 @@
     "@testing-library/user-event": "^13.5.0",
     "@vitejs/plugin-react": "^4.3.1",
     "clsx": "^2.1.1",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.3.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
@@ -16,6 +18,8 @@
   },
   "scripts": {
     "dev": "vite",
+    "build": "vite build",
+    "start": "vite preview", 
     "build": "react-scripts build",
     "start": "vite preview",
     "watch": "npx vite build --watch"
@@ -39,6 +43,7 @@
     ]
   },
   "devDependencies": {
-    "sass-embedded": "^1.77.8"
+    "sass-embedded": "^1.77.8",
+    "prettier": "3.3.3"
   }
 }

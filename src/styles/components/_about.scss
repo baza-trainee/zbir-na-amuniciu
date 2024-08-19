@@ -39,10 +39,13 @@
   height: 120px;
 }
 
+.desktop {
+  display: none;
+}
+
 .about-article-section {
   margin-bottom: 32px;
   text-align: center;
-  max-width: 343px;
 }
 
 .about-title {
@@ -79,18 +82,14 @@
 
 .about-button:hover {
   background-color: inherit;
-  outline: 2px solid map-get($colors, 'accent'); // use outline because border-box not working
-  color: map-get($colors, 'dark-text');
-  // padding: 14px 70px; or change padding
+  outline: 2px solid map-get($colors, 'accent');
 }
 
 @media (min-width: 1024px) {
-  // change to global section when done
   .about-section {
     flex-wrap: wrap;
     max-height: 376px;
     align-items: start;
-    align-content: center;
   }
 
   .about-images-container {
@@ -123,9 +122,20 @@
     height: 158px;
   }
 
+  .desktop {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+
   .about-article-section {
+    width: 100%;
     min-width: 563px;
     flex-grow: 1;
+    flex-basis: 80%;
+    max-width: 350px;
   }
 
   .about-title {
@@ -161,8 +171,7 @@
 
   .about-button:hover {
     background-color: inherit;
-    outline: 2px solid map-get($colors, 'accent'); // use outline because border-box not working
+    outline: 2px solid map-get($colors, 'accent');
     color: map-get($colors, 'dark-text');
-    // padding: 14px 70px; or change padding
   }
 }
