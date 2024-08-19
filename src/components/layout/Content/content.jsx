@@ -1,5 +1,8 @@
 import ReusableBtn from "../../ReusableBtn/ReusableBtn";
 import ProgressBar from "../../ProgressBar/ProgressBar";
+import ProgressBr from "../../Hero/Hero";
+import About from '../About/About';
+import TestModal from "../TestComponent/TestModal";
 // import { TestComponent } from "../TestComponent/TestComponent";
 
 export const Content = () => {
@@ -22,6 +25,11 @@ import ImportantInfo from '../../ImportantInfo/ImportantInfo';
 export const Content = () => {
   return (
     <main>
+      <ProgressBr/>
+      <ProgressBar/>
+      <About />
+      {/* <TestComponent/> */}
+      <TestModal/>
       <ProgressBr />
       <ProgressBar />
       {/* <TestComponent/> */}
