@@ -16,8 +16,15 @@ const Hero = () => {
             </p>
             <div className="HeroSection__img HeroSection__img-mob">
             <img src={warrior} alt="" />
-          </div>
-          <button type="submit" className="form-btn btn">Оформить заказ</button>
+            </div>
+            <button
+        className="about-button"
+        onClick={() =>
+          (window.location.href = 'https://send.monobank.ua/jar/4hWrKfm156')
+        }
+      >
+        Донатити
+      </button>
           </div>
           <div className="HeroSection__img HeroSection__img-desctop">
             <img src={warrior} alt="" />
