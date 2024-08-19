@@ -1,16 +1,14 @@
-import ProgressBar from "../../ProgressBar/ProgressBar";
-import ProgressBr from "../../Hero/Hero";
+import ProgressBar from '../../ProgressBar/ProgressBar';
 import About from '../About/About';
-import TestModal from "../TestComponent/TestModal";
+import TestModal from '../TestComponent/TestModal';
 
 export const Content = () => {
   return (
     <main>
-      <ProgressBr/>
-      <ProgressBar/>
+      <ProgressBar />
       <About />
       {/* <TestComponent/> */}
-      <TestModal/>
+      <TestModal />
     </main>
   );
 };

@@ -1,7 +1,12 @@
 import { useCallback, useEffect } from 'react';
 import sprite from '../../assets/icons/sprite.svg';
+import { JAR_URL } from '../../constants/api/api';
+import ShareLinks from './ShareLinks/ShareLinks';
 
 const ShareModal = ({ closeModal, isOpenModal }) => {
+
+  const socialLinksUrl = window.location.href;
+
   const closeModalCallback = useCallback(() => {
     if (isOpenModal) {
       closeModal();
@@ -29,6 +34,7 @@ const ShareModal = ({ closeModal, isOpenModal }) => {
       closeModalCallback();
     }
   };
+
   return (
     <div className="share-modal" onClick={handleOverlayClick}>
       <div className="share-modal-content">
@@ -41,7 +47,30 @@ const ShareModal = ({ closeModal, isOpenModal }) => {
             <use href={sprite + '#icon-cross'}></use>
           </svg>
         </button>
-        <h2>Поділитися з нами:</h2>
+        <div className="share-modal-wrap">
+          <h2 className="share-modal-title">розповідайте друзям про збір</h2>
+          <p className="share-modal-desc">
+            Поділіться інформацією про збір на амуніцію. Ваша підтримка допоможе
+            врятувати життя!
+          </p>
+            <ShareLinks url={socialLinksUrl} />
+          <p className="share-elem">АБО</p>
+          <a
+            style={{
+              margin: 'auto',
+              display: 'block',
+              padding: '10px 20px',
+              borderRadius: '5px',
+              backgroundColor: '#007bff',
+              color: '#fff',
+            }}
+            href={JAR_URL}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Донатити
+          </a>
+        </div>
       </div>
     </div>
   );
