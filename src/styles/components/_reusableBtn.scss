@@ -1,0 +1,42 @@
+@use 'sass:map';
+@use '../global/variables';
+
+.button {
+    // background-color: map-get($colors, 'accent');
+    background-color: variables.$accent;
+    // background-color: #f99716;
+    border-radius: 16px;
+    padding: 12px 24px;
+    width: 343px;
+    height: 56px;
+
+    
+    font-weight: 500;
+    font-size: 24px;
+    text-transform: capitalize;
+    color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+
+    &:hover {
+        background-color: transparent;
+        border: 2px solid variables.$accent;
+        border-radius: 12px;
+        padding: 16px 72px;
+        color: black;
+        color: variables.$dark-text;
+        cursor: pointer;
+        transition: 1s;
+    }
+}
+
+@media screen and (min-width: 375px) {
+   .button {
+    border-radius: 12px;
+    padding: 16px 72px;
+    width: 275px;
+    height: 69px;
+   }
+}
