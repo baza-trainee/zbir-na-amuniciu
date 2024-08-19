@@ -6,3 +6,17 @@
     // color: $dark-text;
     margin-bottom: 103px;
 }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+
+    p {
+        text-align: center;
+        line-height: 120%;
+        font-size: 20px;
+        @media (max-width: 467.98px) {
+            font-size: 11px;
+        }
+    }
+}
