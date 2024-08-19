@@ -17,7 +17,7 @@ const Hero = () => {
             <div className="HeroSection__img HeroSection__img-mob">
             <img src={warrior} alt="" />
           </div>
-          <button type="submit" class="form-btn btn">Оформить заказ</button>
+          <button type="submit" className="form-btn btn">Оформить заказ</button>
           </div>
           <div className="HeroSection__img HeroSection__img-desctop">
             <img src={warrior} alt="" />
