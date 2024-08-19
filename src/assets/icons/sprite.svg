@@ -3,7 +3,7 @@
 <symbol id="icon-cross" viewBox="0 0 32 32">
 <path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.2" d="M22.4 9.6l-12.8 12.8M22.4 22.4l-12.8-12.8"></path>
 </symbol>
-<symbol id="icon-menu" viewBox="0 0 32 32">
+<symbol id="icon-menu" viewBox="0 0 32 32" width="50">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.2308" d="M8 10.667h16M8 16h16M8 21.333h16"></path>
 </symbol>
 <symbol id="icon-linkedin" viewBox="0 0 32 32">
