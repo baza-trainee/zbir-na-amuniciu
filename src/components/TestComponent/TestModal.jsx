@@ -13,19 +13,7 @@ const TestModal = () => {
 
   return (
     <section>
-      <button
-        style={{
-          margin: 'auto',
-          display: 'block',
-          padding: '10px 20px',
-          borderRadius: '5px',
-          backgroundColor: '#007bff',
-          color: '#fff',
-        }}
-        onClick={openModal}
-      >
-        Поділитись своїм добром
-      </button>
+      <button onClick={openModal}>Донатити</button>
       {isOpenModal && (
         <ShareModal closeModal={closeModal} isOpenModal={isOpenModal} />
       )}

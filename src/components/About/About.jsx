@@ -1,9 +1,9 @@
-import bagDesktop from '../../../assets/img/desktop/bag.png';
-import bagMobile from '../../../assets/img/mobile/bag.png';
-import kaskDesktop from '../../../assets/img/desktop/kask.png';
-import kaskMobile from '../../../assets/img/mobile/kask.png';
-import plitsDesktop from '../../../assets/img/desktop/plits.png';
-import plitsMobile from '../../../assets/img/mobile/plits.png';
+import bagDesktop from '../../assets/img/desktop/bag.png';
+import bagMobile from '../../assets/img/mobile/bag.png';
+import kaskDesktop from '../../assets/img/desktop/kask.png';
+import kaskMobile from '../../assets/img/mobile/kask.png';
+import plitsDesktop from '../../assets/img/desktop/plits.png';
+import plitsMobile from '../../assets/img/mobile/plits.png';
 
 const About = () => {
   return (
