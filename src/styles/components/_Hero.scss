@@ -3,6 +3,7 @@
 .HeroSection {
     padding: 120px 0;
     .about-button{
+        position: static;
         @media (max-width: 767.98px) {
             display: flex;
         }
