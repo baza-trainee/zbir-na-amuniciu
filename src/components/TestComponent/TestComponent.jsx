@@ -13,6 +13,7 @@ const TestComponent = () => {
       <svg className="test-svg-telegram">
         <use href={sprite + '#icon-telegram'}></use>
       </svg>
+      <h1>Hi</h1>
     </section>
   );
 };
