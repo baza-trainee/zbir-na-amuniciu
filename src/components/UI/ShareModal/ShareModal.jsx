@@ -1,7 +1,7 @@
 import { useCallback, useEffect } from 'react';
-import sprite from '../../assets/icons/sprite.svg';
-import { JAR_URL } from '../../constants/api/api';
-import ShareLinks from './ShareLinks/ShareLinks';
+import sprite from '../../../assets/icons/sprite.svg'
+import { JAR_URL } from '../../../constants/api/api';
+import ShareLinks from '../ShareLinks/ShareLinks';
 
 const ShareModal = ({ closeModal, isOpenModal }) => {
 

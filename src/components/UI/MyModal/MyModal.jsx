@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import ShareModal from '../UI/ShareModal';
+import ShareModal from '../ShareModal/ShareModal';
 
-const TestModal = () => {
+const MyModal = () => {
   const [isOpenModal, setIsOpenModal] = useState(false);
 
   const openModal = () => {
@@ -24,7 +24,7 @@ const TestModal = () => {
         }}
         onClick={openModal}
       >
-        Поділитись своїм добром
+        Поділитися добром
       </button>
       {isOpenModal && (
         <ShareModal closeModal={closeModal} isOpenModal={isOpenModal} />
@@ -33,4 +33,4 @@ const TestModal = () => {
   );
 };
 
-export default TestModal;
+export default MyModal;

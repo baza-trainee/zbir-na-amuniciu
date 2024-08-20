@@ -27,7 +27,7 @@ const ShareLinks = ({ socialLinksUrl }) => {
   };
   return (
     <ul className="share-links-wrap">
-      {SOCIAL_LINKS.map(({ id, icon, alt, width, height, name, handler }) => (
+      {SOCIAL_LINKS.map(({ id, icon, alt, handler }) => (
         <li key={id}>
           <a href={handleShare(handler)} target="_blank" rel="noreferrer">
             <svg className='share-link-svg' alt={alt}>
