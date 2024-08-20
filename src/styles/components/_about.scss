@@ -3,8 +3,8 @@
 .about-section {
   display: flex;
   flex-direction: column;
-  margin-bottom: 60px;
   align-items: center;
+  padding-bottom: 60px;
 }
 
 .about-images-container {
@@ -87,17 +87,20 @@
 
 @media (min-width: 1024px) {
   .about-section {
-    flex-wrap: wrap;
-    max-height: 376px;
-    align-items: start;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 120px;
+    position: relative;
   }
 
   .about-images-container {
     position: relative;
     order: 0;
-    flex-basis: 100%;
     min-width: 397px;
     min-height: 376px;
+    margin: 0;
   }
 
   .about-bag-image {
@@ -131,11 +134,8 @@
   }
 
   .about-article-section {
-    width: 100%;
-    min-width: 563px;
-    flex-grow: 1;
-    flex-basis: 80%;
-    max-width: 350px;
+    width: 548px;
+    margin: 0;
   }
 
   .about-title {
@@ -159,6 +159,9 @@
 
   // use the button component when ready
   .about-button {
+    position: absolute;
+    top: 261px;
+    right: 332px;
     padding: 16px 72px;
     border-radius: 12px;
     color: map-get($colors, 'white-text');
