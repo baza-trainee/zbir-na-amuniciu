@@ -7,7 +7,7 @@ import plitsMobile from '../../assets/img/mobile/plits.png';
 
 const About = () => {
   return (
-    <section className="about-section container">
+    <section id='2' className="about-section container">
       <div className="about-images-container">
         <img
           className="about-images about-bag-image desktop"
