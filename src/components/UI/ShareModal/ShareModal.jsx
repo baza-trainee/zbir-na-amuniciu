@@ -5,8 +5,6 @@ import ShareLinks from '../ShareLinks/ShareLinks';
 
 const ShareModal = ({ closeModal, isOpenModal }) => {
 
-  const socialLinksUrl = window.location.href;
-
   const closeModalCallback = useCallback(() => {
     if (isOpenModal) {
       closeModal();
@@ -53,7 +51,7 @@ const ShareModal = ({ closeModal, isOpenModal }) => {
             Поділіться інформацією про збір на амуніцію. Ваша підтримка допоможе
             врятувати життя!
           </p>
-            <ShareLinks url={socialLinksUrl} />
+            <ShareLinks closeModal={closeModal} />
           <p className="share-elem">АБО</p>
           <a
             style={{
