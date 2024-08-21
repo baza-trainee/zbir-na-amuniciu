@@ -1,3 +1,4 @@
+// take it to the Vercel
 export const JAR_URL = 'https://send.monobank.ua/jar/4hWrKfm156';
 
 const WIDGET_JAR_ID = 'iWRSPjNLTbj1tmLTHCZLwwvkkgwScqP';

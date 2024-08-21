@@ -1,6 +1,8 @@
 import sprite from '../../assets/icons/sprite.svg';
 
-const SOCIAL_LINKS = [
+export const URL = 'https://zbir-na-amuniciu.vercel.app/'
+
+export const SOCIAL_LINKS = [
     {
       "id": "1",
       "name": "Facebook",
@@ -23,5 +25,3 @@ const SOCIAL_LINKS = [
       "handler": "linkedin",
     }
   ]
-
-  export default SOCIAL_LINKS;
