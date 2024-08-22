@@ -1,10 +1,10 @@
 import { useCallback, useEffect } from 'react';
-import sprite from '../../../assets/icons/sprite.svg'
+import sprite from '../../../assets/icons/sprite.svg';
 import { JAR_URL } from '../../../constants/api/api';
 import ShareLinks from '../ShareLinks/ShareLinks';
+import ReusableBtn from '../ReusableBtn/ReusableBtn';
 
 const ShareModal = ({ closeModal, isOpenModal }) => {
-
   const closeModalCallback = useCallback(() => {
     if (isOpenModal) {
       closeModal();
@@ -51,23 +51,9 @@ const ShareModal = ({ closeModal, isOpenModal }) => {
             Поділіться інформацією про збір на амуніцію. Ваша підтримка допоможе
             врятувати життя!
           </p>
-            <ShareLinks closeModal={closeModal} />
+          <ShareLinks closeModal={closeModal} />
           <p className="share-elem">АБО</p>
-          <a
-            style={{
-              margin: 'auto',
-              display: 'block',
-              padding: '10px 20px',
-              borderRadius: '5px',
-              backgroundColor: '#007bff',
-              color: '#fff',
-            }}
-            href={JAR_URL}
-            target="_blank"
-            rel="noreferrer"
-          >
-            Донатити
-          </a>
+          <ReusableBtn className="share-modal-btn reuseBtn" text="Донатити" href={JAR_URL} onClick={closeModalCallback} />
         </div>
       </div>
     </div>

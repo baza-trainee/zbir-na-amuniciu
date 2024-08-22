@@ -1,25 +1,31 @@
-const ReusableBtn = ({ text, href, type, onClick, ...props }) => {
+const ReusableBtn = ({ text, href, type, onClick, className, ...props }) => {
   const component = href ? 'a' : 'button';
 
   if (href) {
     return (
-      <div className="reuseBtn">
+      <div className={className}>
         <a
-        
           component={component}
           href={href}
+          onClick={onClick}
           target="_blank"
           rel="noreferrer"
           {...props}
         >
-          <p>{text}</p>
+          {text}
         </a>
       </div>
     );
   }
   return (
-    <button className="reuseBtn" component={component} type={type} onClick={onClick} {...props}>
-      <p>{text}</p>
+    <button
+      className={className}
+      component={component}
+      type={type}
+      onClick={onClick}
+      {...props}
+    >
+      {text}
     </button>
   );
 };
