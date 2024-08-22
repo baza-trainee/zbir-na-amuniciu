@@ -11,6 +11,8 @@ import Hero from '../Hero/Hero';
 import About from '../About/About';
 import ImportantInfo from '../ImportantInfo/ImportantInfo';
 import ProgressBar from '../ProgressBar/ProgressBar';
+import ReusableBtn from "../UI/ReusableBtn/ReusableBtn";
+import { JAR_URL } from "../../constants/api/api";
 
 
 export const Content = () => {
@@ -20,6 +22,13 @@ export const Content = () => {
       <ProgressBar/>
       <About/>
       <ImportantInfo/>
+      <ReusableBtn
+          text="Донатити"
+          href={JAR_URL}
+        />
+      <ReusableBtn
+          text="Поділитись"
+        /> 
       <MyModal/>
     </main>
   );
