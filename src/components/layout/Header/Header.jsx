@@ -9,7 +9,7 @@ export const Header = () => {
 
   const links = [
     { text: 'Мета', sectionId: '1' },
-    { text: 'На що збираєм', sectionId: '2' },
+    { text: 'Збір', sectionId: '2' },
     { text: 'Чому це важливо', sectionId: '3' },
   ];
 
