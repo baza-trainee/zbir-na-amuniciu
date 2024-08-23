@@ -3,18 +3,17 @@ const ReusableBtn = ({ text, href, type, onClick, className, ...props }) => {
 
   if (href) {
     return (
-      <div className={className}>
-        <a
-          component={component}
-          href={href}
-          onClick={onClick}
-          target="_blank"
-          rel="noreferrer"
-          {...props}
-        >
-          {text}
-        </a>
-      </div>
+      <a
+        component={component}
+        href={href}
+        className={className}
+        onClick={onClick}
+        target="_blank"
+        rel="noreferrer"
+        {...props}
+      >
+        {text}
+      </a>
     );
   }
   return (
