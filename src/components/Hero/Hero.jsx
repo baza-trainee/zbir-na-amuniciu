@@ -1,4 +1,5 @@
 import warrior from '../../assets/Hero/warrior.png';
+import ReusableBtn from '../UI/ReusableBtn/ReusableBtn';
 
 const Hero = () => {
   return (
@@ -17,14 +18,11 @@ const Hero = () => {
             <div className="HeroSection__img HeroSection__img-mob">
             <img src={warrior} alt="" />
             </div>
-            <button
-        className="reuseBtn about-button"
-        onClick={() =>
-          (window.location.href = 'https://send.monobank.ua/jar/4hWrKfm156')
-        }
-      >
-        Донатити
-      </button>
+            <ReusableBtn
+              className="reuseBtn"
+              text="Донатити"
+              href="https://send.monobank.ua/jar/4hWrKfm156"
+            />
           </div>
           <div className="HeroSection__img HeroSection__img-desctop">
             <img src={warrior} alt="" />
