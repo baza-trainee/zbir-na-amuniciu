@@ -1,7 +1,7 @@
 @use 'sass:map';
 
 .important-info-section {
-  margin-bottom: 60px;
+  padding-bottom: 60px;
 }
 
 .important-section-title {
@@ -52,7 +52,7 @@
 
 @media (min-width: 1024px) {
   .important-info-section {
-    margin-bottom: 120px;
+    padding-bottom: 120px;
   }
 
   .important-section {

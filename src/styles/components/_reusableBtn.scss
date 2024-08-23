@@ -5,25 +5,17 @@
     background-color: variables.$accent;
     border-radius: 12px;
     padding: 16px 72px;
-    max-width: 343px;
     font-weight: 600;
     font-size: 20px;
-    text-transform: capitalize;
+    line-height: 24.38px;
     color: white;
     text-align: center;
-    margin-bottom: 60px;
     cursor: pointer;
+    border: 2px solid variables.$accent;
 
     &:hover {
         background-color: transparent;
-        border: 2px solid variables.$accent;
         color: variables.$dark-text;
         transition: 0.5s;
  }
-}
-
-@media screen and (min-width: 1024px) {
-  .reuseBtn {
-    max-width: 343px;
-  }
 }

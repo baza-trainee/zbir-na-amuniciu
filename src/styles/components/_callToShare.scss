@@ -1,43 +1,53 @@
 @use 'sass:map';
 
 .call-share-section {
-    margin-bottom: 60px;
-    display: flex;
-    justify-content: center;
+  padding-bottom: 20px;
+}
+
+.call-share-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.call-share-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 1.92px;
+  margin-bottom: 24px;
+  color: map.get($colors, 'dark-text');
+}
+.call-share-paragraph {
+  letter-spacing: 1px;
+  line-height: 1.3;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  max-width: 286px;
+  margin-bottom: 38px;
+  color: map.get($colors, 'dark-text');
+}
+
+.call-share-btn {
+  margin-bottom: px;
+}
+
+@media (min-width: 1024px) {
+  .call-share-section {
+    padding-bottom: 80px;
   }
-  
   .call-share-title {
-    text-align: center;
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 400;
-    margin-bottom: 24px;
+    margin-bottom: 40px;
   }
   .call-share-paragraph {
-    letter-spacing: 1px;
-    line-height: 1.3;
-    font-weight: 400;
-    font-size: 16px;
+    font-size: 24px;
     text-align: center;
-    max-width: 286px;
+    max-width: 600px;
+    margin-bottom: 56px;
   }
-
-  @media (min-width: 1024px) {
-    .call-share-section {
-        margin-bottom: 120px;
-        justify-content: center;
-        
-      }
-      .call-share-section {
-        display: flex;
-        flex-direction: row;
-      }
-      .call-share-title {
-        font-size: 32px;
-        font-weight: 400;
-      }
-      .call-share-paragraph {
-        font-size: 24px;
-        text-align: center;
-        max-width: 600px;
-      }
-  }
+}

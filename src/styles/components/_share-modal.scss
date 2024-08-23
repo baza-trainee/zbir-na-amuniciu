@@ -164,3 +164,19 @@
     margin-bottom: 48px;
   }
 }
+
+.share-btn {
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    max-width: 268px;
+  }
+}
+
+.share-modal-btn {
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    max-width: 248px;
+  }
+}
