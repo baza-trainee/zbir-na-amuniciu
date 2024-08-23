@@ -1,9 +1,9 @@
 import sprite from '../../assets/icons/sprite.svg';
-import warrior from '../../assets/img/desktop/info-section-warrior.png';
+import warrior from '../../assets/img/image/desktop/info-section-warrior.png';
 
 const ImportantInfo = () => {
   return (
-    <section id='3' className="container important-info-section">
+    <section id="3" className="container important-info-section">
       <h2 className="important-section-title">ЧОМУ ЦЕ ВАЖЛИВО</h2>
       <div className="important-section">
         <div>
