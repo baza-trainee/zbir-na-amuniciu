@@ -3,6 +3,7 @@ import {
   kaskImages,
   plitsImages,
 } from '../../assets/img/image/imageImports';
+import ReusableBtn from '../UI/ReusableBtn/ReusableBtn';
 
 const About = () => {
   return (
@@ -67,15 +68,11 @@ const About = () => {
           векторний аналізатор, отже на все необхідне для нашого захисника
         </p>
       </article>
-      {/* use the button component when ready */}
-      <button
-        className="about-button"
-        onClick={() =>
-          (window.location.href = 'https://send.monobank.ua/jar/4hWrKfm156')
-        }
-      >
-        Донатити
-      </button>
+      <ReusableBtn
+        className="reuseBtn about-button"
+        text="Донатити"
+        href="https://send.monobank.ua/jar/4hWrKfm156"
+      />
     </section>
   );
 };
