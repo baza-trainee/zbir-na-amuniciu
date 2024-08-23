@@ -18,7 +18,7 @@ const Hero = () => {
             <img src={warrior} alt="" />
             </div>
             <button
-        className="about-button"
+        className="reuseBtn about-button"
         onClick={() =>
           (window.location.href = 'https://send.monobank.ua/jar/4hWrKfm156')
         }
