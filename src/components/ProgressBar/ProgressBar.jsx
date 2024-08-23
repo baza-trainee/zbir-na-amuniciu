@@ -17,7 +17,7 @@ const ProgressBar = () => {
     return (
       <section id="1" className="progress-section container">
           <h2 className="progress-title">
-            Підтримуй героя
+            Підтримай воїна
           </h2>
         <ul className="progress-info-wrap">
           <li>
