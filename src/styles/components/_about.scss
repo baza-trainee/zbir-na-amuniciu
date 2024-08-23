@@ -62,6 +62,7 @@
 
 .about-button {
   order: 3;
+  width: 100%;
 }
 
 @media (min-width: 1024px) {
@@ -125,5 +126,6 @@
     position: absolute;
     top: 261px;
     right: 323px;
+    width: auto;
   }
 }
