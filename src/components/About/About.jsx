@@ -11,22 +11,22 @@ const About = () => {
       <div className="about-images-container">
         <picture>
           <source
-            media="(min-width: 1024px)"
+            media="(min-width: 768px)"
             type="image/png"
             srcSet={`${bagImages.desktop.png.src} 1x, ${bagImages.desktop.png.src2x} 2x`}
           />
           <source
-            media="(min-width: 1024px)"
+            media="(min-width: 768px)"
             type="image/webp"
             srcSet={`${bagImages.desktop.webp.src} 1x, ${bagImages.desktop.webp.src2x} 2x`}
           />
           <source
-            media="(max-width: 1024px)"
+            media="(max-width: 768px)"
             type="image/png"
             srcSet={`${bagImages.mobile.png.src} 1x, ${bagImages.mobile.png.src2x} 2x`}
           />
           <source
-            media="(max-width: 1024px)"
+            media="(max-width: 768px)"
             type="image/webp"
             srcSet={`${bagImages.mobile.webp.src} 1x, ${bagImages.mobile.webp.src2x} 2x`}
           />
@@ -38,22 +38,22 @@ const About = () => {
         </picture>
         <picture>
           <source
-            media="(min-width: 1024px)"
+            media="(min-width: 768px)"
             type="image/png"
             srcSet={`${kaskImages.desktop.png.src} 1x, ${kaskImages.desktop.png.src2x} 2x`}
           />
           <source
-            media="(min-width: 1024px)"
+            media="(min-width: 768px)"
             type="image/png"
             srcSet={`${kaskImages.desktop.webp.src} 1x, ${kaskImages.desktop.webp.src2x} 2x`}
           />
           <source
-            media="(max-width: 1023px)"
+            media="(max-width: 768px)"
             type="image/png"
             srcSet={`${kaskImages.mobile.png.src} 1x, ${kaskImages.mobile.png.src2x} 2x`}
           />
           <source
-            media="(max-width: 1023px)"
+            media="(max-width: 768px)"
             type="image/png"
             srcSet={`${kaskImages.mobile.webp.src} 1x, ${kaskImages.mobile.webp.src2x} 2x`}
           />
@@ -65,22 +65,22 @@ const About = () => {
         </picture>
         <picture>
           <source
-            media="(min-width: 1024px)"
+            media="(min-width: 768px)"
             type="image/png"
             srcSet={`${plitsImages.desktop.png.src} 1x, ${plitsImages.desktop.png.src2x} 2x`}
           />
           <source
-            media="(min-width: 1024px)"
+            media="(min-width: 768px)"
             type="image/png"
             srcSet={`${plitsImages.desktop.webp.src} 1x, ${plitsImages.desktop.webp.src2x} 2x`}
           />
           <source
-            media="(max-width: 1024px)"
+            media="(max-width: 768px)"
             type="image/png"
             srcSet={`${plitsImages.mobile.png.src} 1x, ${plitsImages.desktop.png.src2x} 2x`}
           />
           <source
-            media="(max-width: 1024px)"
+            media="(max-width: 768px)"
             type="image/png"
             srcSet={`${plitsImages.mobile.webp.src} 1x, ${plitsImages.mobile.webp.src2x} 2x`}
           />
