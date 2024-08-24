@@ -31,7 +31,7 @@
   display: flex;
   flex-direction: column;
   gap: 14px;
-  margin-bottom: 24px;
+  margin-bottom: 48px;
 }
 
 .important-section-paragraph {
@@ -58,6 +58,7 @@
 
   .important-section {
     display: flex;
+    align-items: center;
     flex-direction: row;
   }
 
