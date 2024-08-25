@@ -55,7 +55,7 @@ export const Header = () => {
       <div className="container">
         <div className="header__body">
           <div className="logo__wrapper" onClick={() => handleButtonClick('#')}>
-            <a href="">Baza Trainee Ukraine</a>
+            <a href="https://baza-trainee.tech/ua">Baza Trainee Ukraine</a>
           </div>
           <nav className={clsx('nav', { active: active })}>
             <ul className="nav__list">
