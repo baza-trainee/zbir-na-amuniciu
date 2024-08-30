@@ -21,5 +21,5 @@ export default defineConfig({
   server: {
     historyApiFallback: true,
   },
-  base: '/zbir-na-amuniciu',
+  base: '/',
 });
