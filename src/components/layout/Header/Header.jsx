@@ -61,8 +61,7 @@ export const Header = () => {
             <ul className="nav__list">
               {links.map((link) => (
                 <li className="nav__item" key={link.sectionId}>
-                  <a
-                    className="nav__href"
+                  <a href=" " className="nav__href"
                     onClick={() => handleButtonClick(link.sectionId)}
                   >
                     {link.text}
@@ -79,7 +78,7 @@ export const Header = () => {
         </div>
       </div>
       <div
-        className={clsx('burger_menu_blur', { ['active']: active })}
+        className={clsx('burger_menu_blur', { 'active': active })}
         onClick={() => setActive(false)}
       ></div>
     </header>
