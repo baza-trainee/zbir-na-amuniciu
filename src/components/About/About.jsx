@@ -3,6 +3,7 @@ import {
   kaskImages,
   plitsImages,
 } from '../../assets/img/image/imageImports';
+
 import ReusableBtn from '../UI/ReusableBtn/ReusableBtn';
 
 const About = () => {
