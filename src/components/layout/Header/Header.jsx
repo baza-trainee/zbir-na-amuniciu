@@ -57,16 +57,15 @@ export const Header = () => {
           <div className="logo__wrapper" onClick={() => handleButtonClick('#')}>
             <a href="https://baza-trainee.tech/ua">Baza Trainee Ukraine</a>
           </div>
-          <nav className={clsx('nav', { active: active })}>
+          <nav className={clsx('nav', { 'active': active })}>
             <ul className="nav__list">
               {links.map((link) => (
                 <li className="nav__item" key={link.sectionId}>
-                  <a
-                    className="nav__href"
+                  <button className="nav__href"
                     onClick={() => handleButtonClick(link.sectionId)}
                   >
                     {link.text}
-                  </a>
+                  </button>
                 </li>
               ))}
             </ul>
@@ -79,7 +78,7 @@ export const Header = () => {
         </div>
       </div>
       <div
-        className={clsx('burger_menu_blur', { ['active']: active })}
+        className={clsx('burger_menu_blur', { 'active': active })}
         onClick={() => setActive(false)}
       ></div>
     </header>

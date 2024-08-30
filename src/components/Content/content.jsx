@@ -14,8 +14,6 @@ export const Content = () => {
       <About />
       <ImportantInfo />
       <CallToShare />
-      {/* <ReusableBtn className="reuseBtn" text="Донатити" href={JAR_URL} />
-      <ReusableBtn className="reuseBtn" text="Поділитись" /> */}
     </main>
   );
 };
